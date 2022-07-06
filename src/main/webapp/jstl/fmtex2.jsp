@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<fmt:requestEncoding value="utf-8"/>
+<html>
+<head><title>JSTL fmt 예제 - requestEncoding</title></head>
+<body>
+ 파라미터 : <c:out value="${param.id}"/>
+<form method="post" action="fmtex2.jsp">
+		<input type="text" name="id">
+		<input type="submit" value="확인">
+</form>
+</body>
+</html>
